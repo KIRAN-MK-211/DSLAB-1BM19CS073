@@ -111,13 +111,14 @@ NODE sort_and_insert(NODE first,int item)
     temp->link = NULL;
     if(first == NULL)
         return temp;
-    if(item<first->info)
+    if(item > first->info)//for ascending order , if(item < first->info)
     {
         temp->link = first;
         return temp;
     }
     prev = NULL;
-    while(cur!= NULL && item>cur->info)
+    cur = first;
+    while(cur!=NULL && item < cur->info)//for ascending order, item > cur->info
     {
         prev = cur;
         cur = cur->link;
