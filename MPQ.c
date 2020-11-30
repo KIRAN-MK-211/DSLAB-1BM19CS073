@@ -48,7 +48,7 @@ int i;
 for(i=0;i<3;i++)
 {
   if(rear[i]==front[i]-1)
-  printf("\queue empty\n");
+  printf("\nqueue empty\n");
   else
   {
   printf("deleted item is %d of queue %d\n",queue[i][front[i]],i+1);
@@ -63,7 +63,7 @@ int i,j;
 for(i=0;i<3;i++)
 {
 if(rear[i]==front[i]-1)
-  printf("\queue empty %d\n",i+1);
+  printf("\nqueue empty %d\n",i+1);
 else
   {
   printf("\nQUEUE %d:",i+1);
