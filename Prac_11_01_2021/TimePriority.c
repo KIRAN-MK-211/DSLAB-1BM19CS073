@@ -12,6 +12,7 @@ int main()
         {
             printf("Thread given to Task %d and value before its execution: %d\n",(i+1),q[i]);
             q [i]-= 10;
+            for(long j=1;j<=1000000000;j++);
             if(q[r]==0)
                 r--;
             if(q[f]==0)
